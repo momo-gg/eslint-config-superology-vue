@@ -1,40 +1,40 @@
 {
-  "name": "eslint-config-superology-vue",
-  "version": "0.0.5",
-  "description": "Shared ESLint & Prettier config for Vue based projects at Superology",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "husky install"
-  },
-  "maintainers": [
-    "Momir Zmijanac <momir.zmijanac@superology.com>"
-  ],
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org",
-    "tag": "latest",
-    "access": "public"
-  },
-  "dependencies": {
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-simple-import-sort": "^7.0.0",
-    "eslint-plugin-vue": "^8.4.0"
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^16.1.0",
-    "@commitlint/config-conventional": "^16.0.0",
-    "husky": "^7.0.4",
-    "eslint": "^8.8.0",
-    "prettier": "^2.5.1"
-  },
-  "peerDependencies": {
-    "eslint": ">= 8.8.0",
-    "prettier": ">= 2.5.1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "MIT"
+    "name": "eslint-config-superology-vue",
+    "version": "0.0.6",
+    "description": "Shared ESLint & Prettier config for Vue based projects at Superology",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "postinstall": "husky install"
+    },
+    "maintainers": [
+        "Momir Zmijanac <momir.zmijanac@superology.com>"
+    ],
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org",
+        "tag": "latest",
+        "access": "public"
+    },
+    "dependencies": {
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-import": "^2.25.4",
+        "eslint-plugin-prettier": "^4.0.0",
+        "eslint-plugin-simple-import-sort": "^7.0.0",
+        "eslint-plugin-vue": "^8.4.0"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^16.1.0",
+        "@commitlint/config-conventional": "^16.0.0",
+        "husky": "^7.0.4",
+        "eslint": "^8.8.0",
+        "prettier": "^2.5.1"
+    },
+    "peerDependencies": {
+        "eslint": ">= 8.8.0",
+        "prettier": ">= 2.5.1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT"
 }

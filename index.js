@@ -36,7 +36,7 @@ module.exports = {
     plugins: ['vue', 'simple-import-sort', 'prettier'],
     rules: {
         // Start Filip
-        indent: ['error', 2],
+        indent: ['error', 4],
         'linebreak-style': ['error', 'unix'],
         quotes: ['error', 'single'],
         semi: ['error', 'never'],
@@ -204,7 +204,7 @@ module.exports = {
             {
                 printWidth: 120,
                 singleQuote: true,
-                tabWidth: 2,
+                tabWidth: 4,
                 semi: false,
                 trailingComma: 'none',
                 bracketSpacing: true,
