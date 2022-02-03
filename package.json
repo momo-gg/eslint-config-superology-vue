@@ -1,11 +1,11 @@
 {
     "name": "eslint-config-superology-vue",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "description": "Shared ESLint & Prettier config for Vue based projects at Superology",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "postinstall": "husky install"
+        "prepare": "husky install"
     },
     "maintainers": [
         "Momir Zmijanac <momir.zmijanac@superology.com>"
