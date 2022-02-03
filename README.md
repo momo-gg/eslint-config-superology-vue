@@ -1,6 +1,6 @@
 # eslint-config-superology-vue
 
-Shared ESLint config for Vue based projects at Superology
+Shared ESLint config for Vue based projects at Superology.
 
 ![@superology/eslint-config-vue](https://svgshare.com/i/dvq.svg "ESLint Vue config by Superology")
 
@@ -11,7 +11,7 @@ ESLint statically analyzes your code to quickly find problems. ESLint is built i
 - [Rules](https://eslint.org/docs/rules/)
 - [Shareable Configs](https://eslint.org/docs/developer-guide/shareable-configs)
 
-## Add to a Project
+## Usage
 
 ### Install Configuration
 
