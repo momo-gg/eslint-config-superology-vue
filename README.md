@@ -1,4 +1,6 @@
-# Shared ESLint config for Vue based projects at Superology
+# eslint-config-superology-vue
+
+Shared ESLint config for Vue based projects at Superology
 
 ![@superology/eslint-config-vue](https://svgshare.com/i/dvq.svg "ESLint Vue config by Superology")
 
