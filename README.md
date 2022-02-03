@@ -13,19 +13,19 @@ ESLint statically analyzes your code to quickly find problems. ESLint is built i
 
 ## Usage
 
-### Install Configuration
+### Install the configuration
 
 ```bash
 npm install eslint-config-superology-vue --save-dev
 ```
 
-Also add Peer Dependencies:
+Also make sure you have peer dependencies installed:
 
 ```bash
 npm install eslint prettier eslint-plugin-import --save-dev
 ```
 
-### Add to ESLint Configuration
+### Add to ESLint configuration
 
 ```json
 {
@@ -35,7 +35,7 @@ npm install eslint prettier eslint-plugin-import --save-dev
 
 _Using `.eslintrc` file_
 
-Or
+or
 
 ```js
 module.exports = {
@@ -43,7 +43,7 @@ module.exports = {
 };
 ```
 
-_Using `.eslintrc.js` file_
+_if using `.eslintrc.js` file_
 
 ## Suggestions?
 
