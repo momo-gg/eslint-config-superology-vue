@@ -1,6 +1,6 @@
 # Shared ESLint config for Vue based projects at Superology
 
-![@superology/eslint-config-vue](/superology-logo.svg "ESLint Vue config by Superology")
+![@superology/eslint-config-vue](https://svgshare.com/i/dvq.svg "ESLint Vue config by Superology")
 
 ESLint statically analyzes your code to quickly find problems. ESLint is built into most text editors and you can run ESLint as part of your continuous integration pipeline.
 

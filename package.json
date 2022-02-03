@@ -1,7 +1,7 @@
 {
     "name": "eslint-config-superology-vue",
-    "version": "0.0.1",
-    "description": "Shared ESLint config for Vue based projects at Superology",
+    "version": "0.0.2",
+    "description": "Shared ESLint & Prettier config for Vue based projects at Superology",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
