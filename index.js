@@ -1,9 +1,34 @@
 // Use these to configure automatic import sorting & grouping
 const exportSortRules = [
+    // Node.js builtins. You could also generate this regex if you use a `.js` config.
+    // For example: `^(${require("module").builtinModules.join("|")})(/|$)`
+    [
+    "^(assert|buffer|child_process|cluster|console|constants|crypto|dgram|dns|domain|events|fs|http|https|module|net|os|path|punycode|querystring|readline|repl|stream|string_decoder|sys|timers|tls|tty|url|util|vm|zlib|freelist|v8|process|async_hooks|http2|perf_hooks)(/.*|$)",
+    ],
     // Packages. `vue` related packages come first.
     // Things that start with a letter (or digit or underscore), or `@` followed by a letter.
-    ['^vue', '^@?\\w'],
-    // For custom namespaced packages, add more groups here if needed
+    ['^vue', '^vuex', '^@?\\w'],
+    // Internal packages.
+    ['^config?\\w'],
+    ['^components?\\w'],
+    ['^mixins?\\w'],
+    ['^utils?\\w'],
+    ['^src?\\w'],
+    // Side effect imports.
+    ["^\\u0000"],
+    // Absolute imports and other imports such as Vue-style `@/foo`.
+    // Anything not matched in another group.
+    ["^"],
+    // Relative imports.
+    // Anything that starts with a dot.
+    ["^\\."],
+    // Parent imports. Put `..` last.
+    ["^\\.\\.(?!/?$)", "^\\.\\./?$"],
+    // Other relative imports. Put same-folder imports and `.` last.
+    ["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"],
+    // Style imports.
+    ["^.+\\.s?css$"],
+    // For additional custom namespaced packages, add more groups here if needed
     [
         /* e.g.
 
@@ -70,6 +95,18 @@ module.exports = {
             }
         ],
         // End Filip
+        'vue/script-indent': [
+            'error',
+            4
+        ],
+        'comma-dangle': ['error', {
+            arrays: 'always-multiline',
+            objects: 'always-multiline',
+            imports: 'always-multiline',
+            exports: 'only-multiline',
+            functions: 'always-multiline',
+        }],
+        curly: ['error', 'all'],
         'import/no-extraneous-dependencies': [
             'error',
             {
@@ -79,11 +116,25 @@ module.exports = {
         'import/first': 'error',
         'import/newline-after-import': 'error',
         'import/no-duplicates': 'error',
+        'import/extensions': [
+            'error',
+            'never',
+            {
+                ignorePackages: true,
+                pattern: {
+                    svg: 'always',
+                    json: 'always',
+                    css: 'always',
+                    scss: 'always',
+                    mdx: 'always'
+                }
+            }
+        ],
         'sort-imports': 'off',
         'no-empty-function': [
             'error',
             {
-                allow: ['constructors']
+                allow: ['constructors', 'arrowFunctions', 'methods']
             }
         ],
         'no-const-assign': 'warn',
@@ -140,6 +191,12 @@ module.exports = {
             }
         ],
         'no-use-before-define': ['off'],
+        'no-shadow': [
+            'error',
+            {
+                allow: ['props']
+            }
+        ],
         'padding-line-between-statements': [
             'error',
             {
@@ -219,12 +276,37 @@ module.exports = {
             }
         ],
         'import/prefer-default-export': 'off',
+        'import/no-commonjs': [
+            2,
+            {
+                allowRequire: true,
+                allowPrimitiveModules: true
+            }
+        ],
+        'import/no-extraneous-dependencies': [
+            'error',
+            {
+                peerDependencies: true,
+                // packageDir: [process.cwd(), path.join(__dirname, '../../')]
+            }
+        ],
+        'import/first': 'error',
+        'import/newline-after-import': 'error',
+        'import/no-duplicates': 'error',
+        'sort-imports': 'off',
         'spaced-comment': 'error',
         'simple-import-sort/imports': [
             'error',
             {
                 groups: exportSortRules
             }
-        ]
+        ],
+        // Vue specific
+        'vue/padding-line-between-blocks': ['error', 'always'],
+        'promise/catch-or-return': 'error',
+        'promise/no-return-wrap': 'warn',
+        'promise/always-return': 'error',
+        'promise/no-nesting': 'warn',
+        'promise/param-names': 'error',
     }
 }
