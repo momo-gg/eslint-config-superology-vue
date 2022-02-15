@@ -264,7 +264,7 @@ module.exports = {
                 singleQuote: true,
                 tabWidth: 4,
                 semi: false,
-                trailingComma: 'none',
+                trailingComma: 'es5',
                 bracketSpacing: true,
                 arrowParens: 'avoid'
             }
@@ -303,6 +303,9 @@ module.exports = {
             }
         ],
         // Vue specific
-        'vue/padding-line-between-blocks': ['error', 'always']
+        'vue/padding-line-between-blocks': ['error', 'always'],
+        'vue/component-tags-order': ['error', {
+            'order': ['docs', 'template', 'script' , 'style']
+        }]
     }
 }
