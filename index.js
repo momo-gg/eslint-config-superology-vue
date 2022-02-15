@@ -127,7 +127,8 @@ module.exports = {
                     json: 'always',
                     css: 'always',
                     scss: 'always',
-                    mdx: 'always'
+                    mdx: 'always',
+                    vue: 'always'
                 }
             }
         ],
