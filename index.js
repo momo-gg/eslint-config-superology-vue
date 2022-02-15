@@ -367,6 +367,8 @@ module.exports = {
             },
         ],
         'promise/always-return': 'off',
+        'promise/no-nesting': 'off',
+        'vue/v-on-event-hyphenation': 'off',
     },
     overrides: [
         // Due to conflict with eslint's indent rule, which we still want to apply on non-Vue files
