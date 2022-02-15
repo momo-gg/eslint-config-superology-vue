@@ -51,6 +51,7 @@ module.exports = {
         'airbnb-base',
         'eslint:recommended',
         'plugin:vue/vue3-recommended',
+        'plugin:promise/recommended',
         // 'plugin:vue/recommended', <-- Use this if you are using Vue.js 2.x
         'prettier'
     ],
@@ -58,7 +59,7 @@ module.exports = {
         ecmaVersion: 2022,
         sourceType: 'module'
     },
-    plugins: ['vue', 'simple-import-sort', 'prettier'],
+    plugins: ['vue', 'simple-import-sort', 'promise', 'prettier'],
     rules: {
         // Start Filip
         indent: ['error', 4],
@@ -302,11 +303,6 @@ module.exports = {
             }
         ],
         // Vue specific
-        'vue/padding-line-between-blocks': ['error', 'always'],
-        'promise/catch-or-return': 'error',
-        'promise/no-return-wrap': 'warn',
-        'promise/always-return': 'error',
-        'promise/no-nesting': 'warn',
-        'promise/param-names': 'error',
+        'vue/padding-line-between-blocks': ['error', 'always']
     }
 }
