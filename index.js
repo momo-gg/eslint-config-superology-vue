@@ -67,6 +67,7 @@ module.exports = {
             },
         },
     },
+    ignorePatterns: ['**/node_modules/**', '**/dist/**'],
     rules: {
         'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
         'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
@@ -268,7 +269,6 @@ module.exports = {
                 trailingComma: 'es5',
                 bracketSpacing: true,
                 arrowParens: 'avoid',
-                htmlWhitespaceSensitivity: 'ignore',
             },
         ],
         'func-names': [
