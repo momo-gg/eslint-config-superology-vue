@@ -63,9 +63,9 @@ module.exports = {
     ignorePatterns: ['**/node_modules/**', '**/dist/**', '**/public/**'],
     settings: {
         'import/resolver': {
-            node: {
+            /*             node: {
                 extensions: ['.js', '.vue'],
-            },
+            }, */
             alias: {
                 map: [['@', './src']],
                 extensions: ['.js', '.vue'],
@@ -83,7 +83,6 @@ module.exports = {
         'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
         indent: ['error', 4],
         'linebreak-style': ['error', 'unix'],
-        quotes: ['error', 'single'],
         semi: ['error', 'never'],
         'vue/html-closing-bracket-newline': [
             'error',
