@@ -60,6 +60,7 @@ module.exports = {
         sourceType: 'module',
     },
     plugins: ['vue', 'simple-import-sort', 'promise', 'prettier'],
+    ignorePatterns: ['**/node_modules/**', '**/dist/**', '**/public/**'],
     settings: {
         'import/resolver': {
             node: {
@@ -71,7 +72,11 @@ module.exports = {
             },
         },
     },
-    ignorePatterns: ['**/node_modules/**', '**/dist/**'],
+    globals: {
+        describe: true,
+        it: true,
+        expect: true,
+    },
     rules: {
         'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
         'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
