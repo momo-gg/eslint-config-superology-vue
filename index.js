@@ -308,8 +308,8 @@ module.exports = {
                 order: [
                     'CONDITIONALS', // v-if, v-else-if, v-else, v-show, v-cloak
                     'GLOBAL', // id
-                    'UNIQUE', // ref, key, slot
                     'LIST_RENDERING', // v-for
+                    'UNIQUE', // ref, key, slot
                     'TWO_WAY_BINDING', // v-model
                     'DEFINITION', // is
                     'EVENTS', // v-on
