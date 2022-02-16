@@ -63,9 +63,9 @@ module.exports = {
     ignorePatterns: ['**/node_modules/**', '**/dist/**', '**/public/**'],
     settings: {
         'import/resolver': {
-            /*             node: {
+            node: {
                 extensions: ['.js', '.vue'],
-            }, */
+            },
             alias: {
                 map: [['@', './src']],
                 extensions: ['.js', '.vue'],
