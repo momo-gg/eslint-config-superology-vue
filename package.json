@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-superology-vue",
-    "version": "0.1.9",
+    "version": "0.2.0",
     "description": "Shared ESLint & Prettier config for Vue based projects at Superology",
     "main": "index.js",
     "scripts": {
@@ -18,6 +18,7 @@
     "dependencies": {
         "eslint-config-airbnb-base": "^15.0.0",
         "eslint-config-prettier": "^8.3.0",
+        "eslint-import-resolver-alias": "^1.1.2",
         "eslint-plugin-prettier": "^4.0.0",
         "eslint-plugin-prettier-vue": "^3.1.0",
         "eslint-plugin-promise": "^6.0.0",

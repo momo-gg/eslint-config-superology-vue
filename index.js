@@ -65,6 +65,10 @@ module.exports = {
             node: {
                 extensions: ['.js', '.vue'],
             },
+            alias: {
+                map: [['@', './src']],
+                extensions: ['.js', '.vue'],
+            },
         },
     },
     ignorePatterns: ['**/node_modules/**', '**/dist/**'],
