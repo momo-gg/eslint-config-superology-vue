@@ -59,7 +59,7 @@ module.exports = {
         ecmaVersion: 2022,
         sourceType: 'module',
     },
-    plugins: ['vue', 'simple-import-sort', 'promise', 'prettier'],
+    plugins: ['vue', 'simple-import-sort', 'promise', 'prettier', 'file-progress'],
     ignorePatterns: ['**/node_modules/**', '**/dist/**', '**/public/**'],
     settings: {
         'import/resolver': {
@@ -78,6 +78,7 @@ module.exports = {
         expect: true,
     },
     rules: {
+        'file-progress/activate': 1,
         'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
         'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
         indent: ['error', 4],
