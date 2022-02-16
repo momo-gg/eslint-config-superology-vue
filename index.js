@@ -363,7 +363,7 @@ module.exports = {
             'error',
             {
                 allowThen: true,
-                terminationMethod: ['done', 'catch', 'finally'],
+                terminationMethod: ['catch', 'finally'],
             },
         ],
         'promise/always-return': 'off',
