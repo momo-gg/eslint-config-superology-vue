@@ -77,6 +77,9 @@ module.exports = {
         describe: true,
         it: true,
         expect: true,
+        test: true,
+        jest: true,
+        beforeEach: true,
     },
     rules: {
         'file-progress/activate': 1,
@@ -139,9 +142,11 @@ module.exports = {
                     css: 'always',
                     scss: 'always',
                     mdx: 'always',
+                    vue: 'always',
                 },
             },
         ],
+        'import/order': 'off',
         'sort-imports': 'off',
         'no-empty-function': [
             'error',
