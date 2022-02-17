@@ -9,10 +9,14 @@ const exportSortRules = [
     // Things that start with a letter (or digit or underscore), or `@` followed by a letter.
     ['^vue', '^vuex', '^@?\\w'],
     // Internal packages.
-    ['src'],
+    ['@/'],
+    ['@/config'],
     ['config'],
+    ['@/components'],
     ['components'],
+    ['@/mixins'],
     ['mixins'],
+    ['@/utils'],
     ['utils'],
     // Side effect imports.
     ['^\\u0000'],
