@@ -91,6 +91,12 @@ module.exports = {
             },
         },
         'import/extensions': ['.js', '.jsx', '.vue'],
+        targets: [
+            // https://github.com/browserslist/browserslist#queries
+            'defaults',
+            'not IE 11',
+            'maintained node versions',
+        ],
     },
     globals: {
         'jest/globals': true,
@@ -99,7 +105,7 @@ module.exports = {
         'file-progress/activate': 1,
         'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
         'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-        indent: ['error', 4],
+        indent: 'off',
         'linebreak-style': ['error', 'unix'],
         semi: ['error', 'never'],
         'vue/html-closing-bracket-newline': [
@@ -394,13 +400,4 @@ module.exports = {
         'promise/no-callback-in-promise': 'off',
         'vue/v-on-event-hyphenation': 'off',
     },
-    overrides: [
-        // Due to conflict with eslint's indent rule, which we still want to apply on non-Vue files
-        {
-            files: ['*.vue'],
-            rules: {
-                indent: 'off',
-            },
-        },
-    ],
 }
