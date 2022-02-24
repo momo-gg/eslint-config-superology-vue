@@ -125,16 +125,8 @@ module.exports = {
                 multiline: 'below',
             },
         ],
-        'comma-dangle': [
-            'error',
-            {
-                arrays: 'always-multiline',
-                objects: 'always-multiline',
-                imports: 'always-multiline',
-                exports: 'only-multiline',
-                functions: 'always-multiline',
-            },
-        ],
+        'vue/attribute-hyphenation': 'off',
+        'vue/valid-v-slot': 'off',
         curly: ['error', 'all'],
         'import/no-extraneous-dependencies': [
             'error',
@@ -216,6 +208,7 @@ module.exports = {
                 props: false,
             },
         ],
+        'no-return-assign': ['error', 'except-parens'],
         'no-trailing-spaces': [
             'warn',
             {
@@ -398,6 +391,7 @@ module.exports = {
         ],
         'promise/always-return': 'off',
         'promise/no-nesting': 'off',
+        'promise/no-callback-in-promise': 'off',
         'vue/v-on-event-hyphenation': 'off',
     },
     overrides: [

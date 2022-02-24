@@ -22,7 +22,7 @@ npm install eslint-config-superology-vue --save-dev
 Also make sure you have peer dependencies installed:
 
 ```bash
-npm install eslint prettier eslint-plugin-import --save-dev
+npm install eslint prettier jest eslint-plugin-import --save-dev
 ```
 
 ### Add to ESLint configuration
