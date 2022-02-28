@@ -1,11 +1,15 @@
 {
     "name": "eslint-config-superology-vue",
-    "version": "0.3.2",
+    "version": "0.3.3",
     "description": "Shared ESLint & Prettier config for Vue based projects at Superology",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "prepare": "husky install"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/momo-gg/eslint-config-superology-vue"
     },
     "maintainers": [
         "Momir Zmijanac <momir.zmijanac@superology.com>"
