@@ -348,6 +348,7 @@ module.exports = {
                 alphabetical: false,
             },
         ],
+        'vue/no-deprecated-destroyed-lifecycle': 'off',
         'vue/order-in-components': [
             'error',
             {
