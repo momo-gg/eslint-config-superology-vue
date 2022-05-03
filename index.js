@@ -400,5 +400,11 @@ module.exports = {
         'promise/no-nesting': 'off',
         'promise/no-callback-in-promise': 'off',
         'vue/v-on-event-hyphenation': 'off',
+        'vue/new-line-between-multi-line-property': [
+            'error',
+            {
+                minLineOfMultilineProperty: 2,
+            },
+        ],
     },
 }
