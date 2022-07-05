@@ -11,12 +11,16 @@ const exportSortRules = [
     // Internal packages.
     ['@/?\\w'],
     ['@/config'],
+    ['@config'],
     ['config'],
     ['@/components'],
+    ['@components'],
     ['components'],
     ['@/mixins'],
+    ['@mixins'],
     ['mixins'],
     ['@/utils'],
+    ['@utils'],
     ['utils'],
     // Side effect imports.
     ['^\\u0000'],
