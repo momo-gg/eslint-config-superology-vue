@@ -45,6 +45,34 @@ module.exports = {
 
 _if using `.eslintrc.js` file_
 
+### Handling browser compatibility
+
+It's recommended to update your `package.json` with browsers you intend to support using `browserslist`. The defaults for Superology would be:
+
+```json
+{
+    "browserslist": [
+        "last 2 versions",
+        "not dead",
+        "not ie >= 0",
+        "not op_mini all",
+        "not op_mob >= 0"
+  ]
+}
+```
+
+You can then check the supported browsers by running `npx browserslist`.
+
+If you still receive compatibility warnings for browsers that you are not supporting, it's possible that some npm package is superseding your eslint config with it's own config. To make sure that your browserslist is respected, override the targets in your `eslintrc` config with:
+
+```json
+{
+    "settings": {
+        "targets": null
+    }
+}
+```
+
 ## Suggestions?
 
 Create a discussion on [GitHub](/discussions) or [learn how to make a contribution](https://github.com/firstcontributions/first-contributions).

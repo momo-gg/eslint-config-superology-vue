@@ -97,8 +97,11 @@ module.exports = {
         'import/extensions': ['.js', '.jsx', '.vue'],
         targets: [
             // https://github.com/browserslist/browserslist#queries
-            'defaults',
-            'not IE 11',
+            'last 2 versions',
+            'not dead',
+            'not ie >= 0',
+            'not op_mini all',
+            'not op_mob >= 0',
             'maintained node versions',
         ],
     },
