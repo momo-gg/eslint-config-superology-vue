@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-superology-vue",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "Shared ESLint & Prettier config for Vue based projects at Superology",
     "main": "index.js",
     "scripts": {
