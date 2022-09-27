@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-superology-vue",
-    "version": "1.1.2",
+    "version": "1.1.3",
     "description": "Shared ESLint & Prettier config for Vue based projects at Superology",
     "main": "index.js",
     "scripts": {
@@ -43,6 +43,8 @@
     "peerDependencies": {
         "eslint": ">= 8.24.0",
         "eslint-plugin-import": ">= 2.26.0",
+        "eslint-plugin-jest": "^27.0.4",
+        "eslint-plugin-sonarjs": "^0.15.0",
         "prettier": ">= 2.7.1"
     },
     "keywords": [],
