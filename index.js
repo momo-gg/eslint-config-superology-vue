@@ -22,6 +22,14 @@ const exportSortRules = [
     ['@/composables'],
     ['@composables'],
     ['composables'],
+    ['@src/features'],
+    ['@/features'],
+    ['@features'],
+    ['features'],
+    ['@src/libs'],
+    ['@/libs'],
+    ['@libs'],
+    ['libs'],
     ['@src/analytics'],
     ['@/analytics'],
     ['@analytics'],
@@ -66,6 +74,10 @@ const exportSortRules = [
     ['@/assets'],
     ['@assets'],
     ['assets'],
+    ['@src/types'],
+    ['@/types'],
+    ['@types'],
+    ['types'],
     // Side effect imports.
     ['^\\u0000'],
     // Absolute imports and other imports such as Vue-style `@/foo`.
@@ -266,6 +278,12 @@ module.exports = {
             },
         ],
         'no-return-assign': ['error', 'except-parens'],
+        'no-restricted-imports': [
+            'error',
+            {
+                patterns: ['@/features/*/*', '@features/*/*', '@src/features/*/*', 'features/*/*'],
+            },
+        ],
         'no-trailing-spaces': [
             'warn',
             {
